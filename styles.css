@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --font-roboto: 'Roboto', sans-serif;
+    --light-blue: #1992D4;
+    --light-gray: #E2E8F0;
+    --orange: #F0B52C
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    font-family: var(--font-roboto);
+}
+
+.header {
+    min-width: 20vw;
+    background-color: var(--light-blue);
+    color: white;
+    padding: 1rem;
+}
+
+.header img {
+    max-height: 1.2rem;
+}
+
+.header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.header nav ul li {
+padding: .6rem;
+    display: flex;
+    gap: 1.3rem;
+}
+
+.header nav ul li p {
+    font-weight: bold;
+}
+
+.header nav ul:nth-child(1) {
+    padding-top: 1.7rem;
+}
+
+.header nav ul:nth-child(2) {
+    padding-top: 2rem;
+}
+
+.dashboard {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+
+}
+
+.dashboard img {
+    max-height: 2.5rem;
+}
+
+.main {
+    min-width: 80vw;
+}
+
+.main img {
+    max-height: 1.4rem;
+}
+
+.main .upper-part {
+    background-color: #fff;
+    min-height: 23vh;
+    padding-left: 2.5rem;
+}
+
+.main .upper-part .section1{
+    display: flex;
+    align-items: center;
+    padding-top: 1.3rem;
+    gap: 8rem;
+}
+
+.main .upper-part .section1 .left {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+}
+
+.main .upper-part .section1 .right {
+    display: flex;
+    align-items: center;
+    min-width: 22rem;
+    gap: 1.7rem;
+}
+
+.main .upper-part .section1 .right img:nth-child(2) {
+    min-height: 2.7rem;
+}
+
+input[type="search"] {
+    appearance: none;
+    background-color: var(--light-gray);
+    border: none;
+    min-height: 1.8rem;
+    min-width: 30rem;
+    border-radius: 1rem;
+}
+
+.main .upper-part .section2 {
+    display: flex;
+    align-items: center;
+    padding-top: 1.8rem;
+    gap: 12.5rem;
+}
+
+.main .upper-part .section2 img {
+    min-height: 4.4rem;
+}
+
+.main .upper-part .section2 .left {
+    display: flex;
+    align-items: center;
+}
+
+.main .upper-part .section2 .left div:nth-child(2) {
+    padding-left: 1.1rem;
+}
+
+.main .upper-part .section2 .left h3 {
+    padding-top: .6rem;
+}
+
+.main .upper-part .section2 .right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.main .upper-part .section2 .right button {
+    appearance: none;
+    background-color: var(--light-blue);
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: .7rem 0;
+    min-width: 6rem;
+    border-radius: 1.5rem;
+}
+
+
+.main .bottom-part {
+    background-color: var(--light-gray);
+    min-height: 77vh;
+}
